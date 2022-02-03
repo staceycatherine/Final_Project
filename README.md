@@ -1,7 +1,8 @@
 # Final_Project
 
 ## Database
-Postgres hosted on Amazon Web Services.
+
+### Postgres hosted on Amazon Web Services.
 
 - **Server Name**: shrbfk-final-project
 
