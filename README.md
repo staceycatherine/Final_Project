@@ -12,4 +12,4 @@
 
 - **Port**: 5432
 
-1- **Security Group**: default (sg-06938851ed8d02d68)
+- **Security Group**: default (sg-06938851ed8d02d68)
