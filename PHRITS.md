@@ -1,8 +1,21 @@
 If I put notes specific to what I'm doing or thinking here, it can roll up to the main repo without accidentally overwriting the main README.
 
-## Thoughts
+### Postgres hosted on Amazon Web Services.
 
-Database: Postgres hosted on AWS. I'd guess it's a fairly safe assumption that it's smart enough to handle all of us pounding away at the same time.
+- **Server Name**: shrbfk-final-project
+
+- **Initial Database**: vet_data
+
+- **Endpoint**: shrbfk-final-project.cuitpsvagrne.us-east-2.rds.amazonaws.com
+
+- **Port**: 5432
+
+- **Security Group**: default (sg-06938851ed8d02d68)
+
+
+
+
+## Thoughts
 
 Data: If we can find the data we're looking for, we can store each source in a separate table. They won't necessarily join into a pretty graphical entity relationship diagram, but once it's imported, it's there for munging.
 
