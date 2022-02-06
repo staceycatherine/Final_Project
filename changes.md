@@ -1,4 +1,4 @@
-# Final_Project
+# README ideas for Final_Project
 
 ## Minor formatting corrections/suggestions. Cosmetic only.
 
@@ -11,16 +11,9 @@ Missing number:
 #### We agree to communicate via Slack or text and respond within 24 hours. 
 ```
 
-```
-## Communication Protocols
-#### 1. We agree to communicate via Slack or text and respond within 24 hours. 
-```
-
-Or even:
+Or everything's a 1.!
 
 ```
-## Communication Protocols
-
 1. We agree to communicate via Slack or text and respond within 24 hours.
 1. We agree to notify each other of any scheduled or unscheduled abscenses.
 1. We agree to review any changes before adding to the main branch.
@@ -28,13 +21,9 @@ Or even:
 
 producing:
 
-## Communication Protocols
-
 1. We agree to communicate via Slack or text and respond within 24 hours.
 1. We agree to notify each other of any scheduled or unscheduled abscenses.
 1. We agree to review any changes before adding to the main branch.
-
-___
 
 
 
