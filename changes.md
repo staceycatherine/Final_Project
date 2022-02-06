@@ -1,6 +1,11 @@
 # Final_Project
 
 ## Minor formatting corrections/suggestions. Cosmetic only.
+
+Markdown (.md) language itselfe is pretty new to me, so some of this is stuff I'm still figuring out. (Lots of commits along the way. I said it was a silly metric.) It's not as sophisticated as HTML, which is kind of the point. And it's really temperamental about vertical whitespace. The database notes look really terrible in the editor with all of that, but it displays the way it's supposed to.
+
+Missing number:
+
 ```
 ## Communication Protocols
 #### We agree to communicate via Slack or text and respond within 24 hours. 
@@ -10,6 +15,32 @@
 ## Communication Protocols
 #### 1. We agree to communicate via Slack or text and respond within 24 hours. 
 ```
+
+Or even:
+
+```
+## Communication Protocols
+
+1. We agree to communicate via Slack or text and respond within 24 hours.
+
+1. We agree to notify each other of any scheduled or unscheduled abscenses.
+
+1. We agree to review any changes before adding to the main branch.
+```
+
+producing:
+
+## Communication Protocols
+
+1. We agree to communicate via Slack or text and respond within 24 hours.
+
+1. We agree to notify each other of any scheduled or unscheduled abscenses.
+
+1. We agree to review any changes before adding to the main branch.
+
+___
+
+
 
 You can replace
 
