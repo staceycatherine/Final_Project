@@ -1,6 +1,6 @@
 CountyClassification
 -
-FIPStxt PK int
+FIPS PK int
 State varchar(2)
 County archar(50)
 RuralUrbanContinuumCode2013 int
@@ -237,3 +237,40 @@ NetMigration1019 int
 TotalPopEst2018 int
 TotalPopEstBase2010 int
 
+Veterans
+-
+FIPStxt PK int
+State varchar(2)
+County archar(50)
+Vets18OPct float
+GulfWar2VetsPct float
+GulfWar1VetsPct float
+VietnamEraVetsPct float
+KoreanWarVetsPct float
+WW2VetsPct float
+MaleVetsPct float
+FemaleVetsPct float
+WhiteNonHispVetsPct float
+BlackVetsPct float
+HispanicVetsPct float
+OtherRaceVetsPct float
+MedianVetsInc int
+MedianNonVetsInc int
+LessThanHSVetsPct float
+HighSchOnlyVetsPct float
+SomeCollegeVetsPct float
+CollegeDegreeVetsPct float
+LFPVetsRate float
+UEVetsRate float
+PctVetsPoor float
+PctNonVetsPoor float
+PctVetsDisabilty float
+PctNonVetsDisabilty float
+CivPopVets18to64Num int
+CivPop18ONum int
+Vets18ONum int
+NonVetsDisabilty int
+NonVetsPoor int
+VetsDisabilty int
+VetsPoor int
+CLFVets18to64Num int
