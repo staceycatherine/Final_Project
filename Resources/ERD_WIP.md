@@ -45,3 +45,22 @@ Type_2015_Nonspecialized_NO boolean
 Metro_Adjacent2013 boolean
 PersistentChildPoverty2004 boolean
 RecreationDependent2000 boolean
+
+Income
+-
+FIPS  PK int
+State varchar(2)
+County varchar(50)
+Median_HH_Inc_ACS    int
+PerCapitaInc    int
+Poverty_Rate_0_17_ACS   float
+Poverty_Rate_ACS float
+Deep_Pov_All float
+Deep_Pov_Children float
+NumAll_inPOV_ACS int
+PCTPOV017 float
+POV017 int
+MedHHInc int
+POVALL int
+PCTPOVALL float
+Num_inPOV_0_17_ACS int
