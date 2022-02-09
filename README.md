@@ -11,7 +11,7 @@ ________________________________________________________________________________
 #### https://www.ers.usda.gov/data-products/atlas-of-rural-and-small-town-america/documentation/#DATADEF
 ___________________________________________________________________________________________________________________________________________________________________________________
 ## Machine Learning Model
-#### What type of model and why? We plan to start with multiple linear regression and compare the results with Ridge and Lasso since we are looking for predictive trends not classifications. 
+#### What type of model and why? We plan to start with multiple linear regression and compare the results with ridge and lasso regression since we are looking for predictive trends not classifications. 
 #### How are you training your model?
 #### What is your model's accuracy?
 #### How does this model work?
