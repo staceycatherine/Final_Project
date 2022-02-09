@@ -48,7 +48,7 @@ RecreationDependent2000 boolean
 
 Income
 -
-FIPS  PK int
+FIPS PK int FK >- CountyClassification.FIPS
 State varchar(2)
 County varchar(50)
 Median_HH_Inc_ACS    int
@@ -67,7 +67,7 @@ Num_inPOV_0_17_ACS int
 
 Jobs
 -
-FIPS  PK int
+FIPS PK int FK >- CountyClassification.FIPS
 State varchar(2)
 County varchar(50)
 UnempRate2020 float
@@ -145,7 +145,7 @@ NumCivLaborforce2017 int
 
 People
 -
-FIPS  PK int
+FIPS PK int FK >- CountyClassification.FIPS
 State varchar(2)
 County varchar(50)
 PopChangeRate1819 float
@@ -190,7 +190,7 @@ Ed4AssocDegreePct float
 Ed5CollegePlusPct float
 AvgHHSize float
 FemaleHHPct float
-HH65PlusAlonePct
+HH65PlusAlonePct float
 OwnHomePct float
 ForeignBornNum int
 TotalPopACS int
@@ -239,7 +239,7 @@ TotalPopEstBase2010 int
 
 Veterans
 -
-FIPStxt PK int
+FIPStxt PK int FK >- CountyClassification.FIPS
 State varchar(2)
 County archar(50)
 Vets18OPct float
