@@ -1,4 +1,6 @@
-﻿-- Based on Export from QuickDBD
+﻿-- Foreign Keys removed. They probably don't belong liningh up against CountyClassification
+
+-- Based on Export from QuickDBD
 
 DROP TABLE IF EXISTS "CountyClassification" CASCADE;
 DROP TABLE IF EXISTS "Income" CASCADE;
@@ -296,19 +298,19 @@ CREATE TABLE "Veterans" (
     "VetsPoor" int   ,
     "CLFVets18to64Num" int   ,
     CONSTRAINT "pk_Veterans" PRIMARY KEY (
-        "FIPStxt"
+        "FIPS"
      )
 );
 
-ALTER TABLE "Income" ADD CONSTRAINT "fk_Income_FIPS" FOREIGN KEY("FIPS")
-REFERENCES "CountyClassification" ("FIPS");
+-- ALTER TABLE "Income" ADD CONSTRAINT "fk_Income_FIPS" FOREIGN KEY("FIPS")
+-- REFERENCES "CountyClassification" ("FIPS");
 
-ALTER TABLE "Jobs" ADD CONSTRAINT "fk_Jobs_FIPS" FOREIGN KEY("FIPS")
-REFERENCES "CountyClassification" ("FIPS");
+-- ALTER TABLE "Jobs" ADD CONSTRAINT "fk_Jobs_FIPS" FOREIGN KEY("FIPS")
+-- REFERENCES "CountyClassification" ("FIPS");
 
-ALTER TABLE "People" ADD CONSTRAINT "fk_People_FIPS" FOREIGN KEY("FIPS")
-REFERENCES "CountyClassification" ("FIPS");
+-- ALTER TABLE "People" ADD CONSTRAINT "fk_People_FIPS" FOREIGN KEY("FIPS")
+-- REFERENCES "CountyClassification" ("FIPS");
 
-ALTER TABLE "Veterans" ADD CONSTRAINT "fk_Veterans_FIPStxt" FOREIGN KEY("FIPStxt")
-REFERENCES "CountyClassification" ("FIPS");
+-- ALTER TABLE "Veterans" ADD CONSTRAINT "fk_Veterans_FIPS" FOREIGN KEY("FIPS")
+-- REFERENCES "CountyClassification" ("FIPS");
 
