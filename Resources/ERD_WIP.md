@@ -1,0 +1,47 @@
+CountyClassification
+-
+FIPStxt PK int
+State varchar(2)
+County archar(50)
+RuralUrbanContinuumCode2013 int
+UrbanInfluenceCode2013 int
+RuralUrbanContinuumCode2003 int
+UrbanInfluenceCode2003 int
+Metro2013 boolean
+Nonmetro2013 boolean
+Micropolitan2013 boolean
+Type_2015_Update int
+Type_2015_Farming_NO boolean
+Type_2015_Manufacturing_NO boolean
+Type_2015_Mining_NO boolean
+Type_2015_Government_NO boolean
+Type_2015_Recreation_NO boolean
+Low_Education_2015_update boolean
+Low_Employment_2015_update boolean
+Population_loss_2015_update boolean
+Retirement_Destination_2015_Update boolean
+Perpov_1980_0711 boolean
+PersistentChildPoverty_1980_2011 boolean
+Hipov boolean
+HiAmenity boolean
+HiCreativeClass2000 boolean
+Gas_Change int
+Oil_Change int
+Oil_Gas_Change int
+Metro2003 boolean
+NonmetroNotAdj2003 boolean
+NonmetroAdj2003 boolean
+Noncore2003 boolean
+EconomicDependence2000 int
+Nonmetro2003 boolean
+Micropolitan2003 boolean
+FarmDependent2003 boolean
+ManufacturingDependent2000 boolean
+LowEducation2000 boolean
+RetirementDestination2000 boolean
+PersistentPoverty2000 boolean
+Noncore2013 boolean
+Type_2015_Nonspecialized_NO boolean
+Metro_Adjacent2013 boolean
+PersistentChildPoverty2004 boolean
+RecreationDependent2000 boolean
