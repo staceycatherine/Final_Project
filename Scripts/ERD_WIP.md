@@ -2,7 +2,7 @@ CountyClassification
 -
 FIPS PK int
 State varchar(2)
-County archar(50)
+County varchar(50)
 RuralUrbanContinuumCode2013 int
 UrbanInfluenceCode2013 int
 RuralUrbanContinuumCode2003 int
@@ -241,7 +241,7 @@ Veterans
 -
 FIPStxt PK int FK >- CountyClassification.FIPS
 State varchar(2)
-County archar(50)
+County varchar(50)
 Vets18OPct float
 GulfWar2VetsPct float
 GulfWar1VetsPct float
