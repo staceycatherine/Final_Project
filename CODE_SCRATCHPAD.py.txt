@@ -1,10 +1,10 @@
 # **********************************************************
 # **********************************************************
 # To Do
-#
+# -----
 # Automate table creation.
 # Automate data population.
-# Clean the Data            # Ron WIP
+# Clean the Data. (Ron WIP.)
 
 # Everything from here down should be set up as functions so that we can make
 # the model run, then futz around with parameters rather than digging around in
@@ -88,14 +88,14 @@ warnings.filterwarnings('ignore')
 #  3. Populate the database.    # Currently manual, but plan to change.
 #  4. Clean the Data            # Ron WIP
 
-# Functions.
+# Functions for futzing.
 #
 #  5. Define columns. Select, bucket, encode, merge, drop.
 #  6. Split the data.
 #  7. Scale the data.
-# 7.5.Build the model.
-#  8. Compile the model.
-#  9. Train the model.
-# 10. Evaluate the model.
-# 11. Checkpoints and data dumps along the way.
-# 12. Generate tables for presentation
+#  8. Build the model.
+#  9. Compile the model.
+# 10. Train the model.
+# 11. Evaluate the model.
+# 12. Checkpoints and data dumps along the way.
+# 13. Generate tables for presentation.
