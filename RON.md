@@ -15,6 +15,9 @@ ________________________________________________________________________________
 #### How are you training your model?
 #### What is your model's accuracy?
 #### How does this model work?
+
+![image](https://user-images.githubusercontent.com/90691846/153676445-06c1b2b2-6596-46a1-8a12-ddd2e587e96a.png)
+
 ___________________________________________________________________________________________________________________________________________________________________________________
 ## Database
 #### Describe the schema(ERD or text)
