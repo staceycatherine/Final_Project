@@ -1,3 +1,26 @@
+### Sample stuff
+## top values
+#default_scaler = StandardScaler
+#
+#fun scale_column(incolumn=[]):
+#    scaler = default_scaler();
+#    scaled = scler.fit(incolumn);
+#    return scaled;
+#    
+#fun scale_transform(scaled="X_scaler type"):
+#    scaler = default_scaler();
+#    transformed = scaler.transform(X_train)
+#    return transformed;
+#    
+#
+## scaler = StandardScaler()
+#X_scaler = scaler.fit(X_train)
+#X_train_scaled = scale_transform(X_train)
+#X_test_scaled = scale_transform(X_test)
+
+
+
+
 # **********************************************************
 # **********************************************************
 # To Do
