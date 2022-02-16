@@ -37,6 +37,10 @@
 # import Stacey's code
 
 
+# Constants
+hidden_layers = 2
+
+
 # Libraries and such.
 import os
 import pandas as pd
@@ -48,6 +52,12 @@ from tensorflow.keras.callbacks import ModelCheckpoint
 # Keras complains about GPUs
 import warnings
 warnings.filterwarnings('ignore')
+
+
+# ******************
+fun encode_column(df_input):
+  # encoding code here
+  return df_input;
 
 # ******************
 # Extract from module 19 challenge code. Steps 5-11 in Main below.
@@ -90,7 +100,19 @@ warnings.filterwarnings('ignore')
 
 # Functions for futzing.
 #
-#  5. Define columns. Select, bucket, encode, merge, drop.
+#  5. Define columns. Select, bucket, *encode*, merge, drop.
+
+# enc = OneHotEncoder(sparse=False)
+# encode_df = pd.DataFrame(enc.fit_transform(application_df[application_cat]))
+# encode_df.columns = enc.get_feature_names(application_cat)
+
+# column 1
+# column2
+
+# dataframe = dataframe with column encoded
+df = encode_column(df[column2])
+
+
 #  6. Split the data.
 #  7. Scale the data.
 #  8. Build the model.
