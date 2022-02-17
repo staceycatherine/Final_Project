@@ -3,7 +3,7 @@
 #### 1. We agree to communicate via Slack or text and respond within 24 hours. 
 #### 2. We agree to notify each other of any scheduled or unscheduled absences. 
 #### 3. We agree to review any changes before adding to the main branch.
-#### 4. Edits to .gitignore and README.md will be done directly at the main branch. 
+#### 4. Edits to .gitignore will be done directly at the main branch. 
 
 ##### Contributions: We choose to work and present as a group, with each of us contributing equal time and effort. We acknowledge that this will result in a group grade for this final project. 
 ___________________________________________________________________________________________________________________________________________________________________________________
