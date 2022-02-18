@@ -1,15 +1,26 @@
 ### Updates 2022-02-18
 
-- Modified Ron's `people_file_review.ipynb` to connect to the AWS database. File saved as [`fhk_people_file_review.ipynb`](`fhk_people_file_review.ipynb`).<br>
+- I modified Ron's `people_file_review.ipynb` to connect to the AWS database. File saved as [`fhk_people_file_review.ipynb`](`fhk_people_file_review.ipynb`).<br>
 **Implementation:** Delete Ron's file. Remove the `fhk_` from the front of my revision. Commit and push.
 
-- The modified notebook:
-
-    - Creates tables in the database `vet_data`:
+- The modified notebook creates tables in the database `vet_data`:
     
-        - People
-        
-        - Reduced_People_Data
+    - People
+    
+    - Reduced_People_Data
+
+- I removed the tables I'd created from CSV files before. The ones we need are being created or read in, and the others are just clutter.
+
+- I modified Ron's `fhk_sorting_data.ipynb` to connect to the AWS database. File saved as [`fhk_sorting_data.ipynb`](`fhk_sorting_data.ipynb`).<br>
+**Implementation:** Delete Ron's file. Remove the `fhk_` from the front of my revision. Commit and push.
+
+- The modified notebook creates tables in the database `vet_data`:
+    
+    - Veterans
+    
+    - Sorted_Veterans_Data
+    
+- **Recommendation:** Both scripts can safely be modified to *not* produce the derived `csv` files. Code using the data (including Tableau) should connect to and pull from the tables.
 
 ### Updates: 2022-02-09
 
