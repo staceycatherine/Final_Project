@@ -1,3 +1,16 @@
+### Updates 2022-02-18
+
+- Modified Ron's `people_file_review.ipynb` to connect to the AWS database. File saved as [`fhk_people_file_review.ipynb`](`fhk_people_file_review.ipynb`).<br>
+**Implementation:** Delete Ron's file. Remove the `fhk_` from the front of my revision. Commit and push.
+
+- The modified notebook:
+
+    - Creates tables in the database `vet_data`:
+    
+        - People
+        
+        - Reduced_People_Data
+
 ### Updates: 2022-02-09
 
 Tables created for:
