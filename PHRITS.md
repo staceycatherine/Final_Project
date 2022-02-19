@@ -11,7 +11,7 @@
 
 - I removed the tables I'd created from CSV files before. The ones we need are being created or read in, and the others are just clutter.
 
-- I modified Ron's `fhk_sorting_data.ipynb` to connect to the AWS database. File saved as [`fhk_sorting_data.ipynb`](`fhk_sorting_data.ipynb`).<br>
+- I modified Ron's `sorting_data.ipynb` to connect to the AWS database. File saved as [`fhk_sorting_data.ipynb`](`fhk_sorting_data.ipynb`).<br>
 **Implementation:** Delete Ron's file. Remove the `fhk_` from the front of my revision. Commit and push.
 
 - The modified notebook creates tables in the database `vet_data`:
