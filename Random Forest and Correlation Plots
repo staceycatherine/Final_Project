@@ -1,0 +1,9 @@
+# Import dependencies
+import matplotlib.pyplot as plt
+from sklearn.ensemble import RandomForestRegressor
+
+# Fitting Random Forest Regression to the dataset
+
+from sklearn.ensemble import RandomForestRegressor
+regressor = RandomForestRegressor(n_estimators = 10, random_state = 0)
+regressor.fit(X.reshape(-1,1), y.reshape(-1, 1))
