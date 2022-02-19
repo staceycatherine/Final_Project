@@ -5,9 +5,9 @@
 
 - The modified notebook creates tables in the database `vet_data`:
     
-    - People
+    - people
     
-    - Reduced_People_Data
+    - reduced_people_data
 
 - I removed the tables I'd created from CSV files before. The ones we need are being created or read in, and the others are just clutter.
 
@@ -16,11 +16,17 @@
 
 - The modified notebook creates tables in the database `vet_data`:
     
-    - Veterans
+    - veterans
     
-    - Sorted_Veterans_Data
+    - sorted_veterans_data
     
 - **Recommendation:** Both scripts can safely be modified to *not* produce the derived `csv` files. Code using the data (including Tableau) should connect to and pull from the tables.
+
+- Created [`people_vet_join.sql`](static/SQL/people_vet_join.sql) to execute a `JOIN`. The script creates the table:
+
+    - people_vet_join
+
+- **Repo:** I moved the existing SQL scripts to [`./static/SQL/`](static/SQL/).
 
 ### Updates: 2022-02-09
 
