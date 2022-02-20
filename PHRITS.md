@@ -1,4 +1,24 @@
-### Updates 2022-02-18
+### Updates 2022-02-20
+
+- [Database ERD](Images/Database_ERD.png) **I *did* add this to the group README already for Sunday's project sumission.**
+
+- Modifications to the `fhk_` copies of Ron's worksheets. (They haven't replaced the originals yet.) I swapped out all the database work for a single call to `get_db_engine()`. ~~I had to do a little work in the `utils_common.py` file so that what Stacey's working on can use `get_db_session()` while Ron doesn't have to rewrite his usage of `get_db_engine()`.~~
+
+- What I'd coded around Stacey's stuff called for a `Session`, but it really needed a `db_engine` after all. `nn_refactored.ipynb` updated accordingly. I left the flexibility in `utils_common.py` alone.
+
+- `nn_refactored` now applies reusable code to :
+
+    - connect to the database
+    
+    - read `people_vet_join`, the combined file.
+
+    - (Table is already clean. No action taken.)
+    
+    - encode the dataframe, converting categoricals to numeric
+
+- **YOWZA!** I tried to create a table of the encoded results here, but it failed because we're limited to *1600 columns!* For every state and county, there's an encoded column that looks like `State_KS" FLOAT(53)`. IIRC, we can pull those columns out, encode the data, then put them back: I think the record order remains unchanged. We know what those columns are, so I'll plan to plug that into `encode_dataframe()`.
+
+### Applied/Historical: Updates 2022-02-18
 
 - I modified Ron's `people_file_review.ipynb` to connect to the AWS database. File saved as [`fhk_people_file_review.ipynb`](`fhk_people_file_review.ipynb`).<br>
 **Implementation:** Delete Ron's file. Remove the `fhk_` from the front of my revision. Commit and push.
@@ -28,7 +48,7 @@
 
 - **Repo:** I moved the existing SQL scripts to [`./static/SQL/`](static/SQL/).
 
-### Updates: 2022-02-09
+### Applied/Historical: Updates: 2022-02-09
 
 Tables created for:
 
@@ -40,7 +60,7 @@ Tables created for:
 
 - People
 
-- Veterans
+/- Veterans
 
 Imports performed on all of the above, bringing in most of the data Ron has gathered. I had to use Windows-1252 encoding to support the &ntilde; character and others. I did not build or import tables for the derived data such as `reduced_people_data.csv`. It appears that all of the CSVs were pulled from the `RuralAtlasData23.xlsx` file, so I left that alone, too.
 
@@ -54,9 +74,7 @@ Imports performed on all of the above, bringing in most of the data Ron has gath
 - **Note:** No foreign keys yet exist. QuickDB originally generated the FKs I'd flagged, but they were all pointing to `County Classicification` which probably isn't the base table. Removed for the time being.
 
 
-## Older
-
-### Postgres hosted on Amazon Web Services.
+### Applied/Historical: Postgres hosted on Amazon Web Services.
 
 - **Server Name**: shrbfk-final-project
 
@@ -67,11 +85,3 @@ Imports performed on all of the above, bringing in most of the data Ron has gath
 - **Port**: 5432
 
 - **Security Group**: default (sg-06938851ed8d02d68)
-
-## Thoughts
-
-Data: If we can find the data we're looking for, we can store each source in a separate table. They won't necessarily join into a pretty graphical entity relationship diagram, but once it's imported, it's there for munging.
-
-Scope: Since we're talking about Veterans Affairs kinda stuff, I expect we'll mostly find information at the national level. We can narrow or filter from there. If we find rich sources in Virginia, we can pull in the national stuff filtered by state.
-
-Minimum number of commits: Dude, I save and commit when I find a typo. What a silly metric! :-)
