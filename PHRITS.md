@@ -1,7 +1,8 @@
 ### Updates 2022-02-20
 
-- [Database ERD](Images/Database_ERD.png)
+- [Database ERD](Images/Database_ERD.png) **I *did* add this to the group README already for Sunday's project sumission.**
 
+- Modifications to the `fhk_` copies of Ron's worksheets. (They haven't replaced the originals yet.) I swapped out all the database work for a single call to `get_db_engine()`. I had to do a little work in the `utils_common.py` file so that what Stacey's working on can use `get_db_session()` while Ron doesn't have to rewrite his usage of `get_db_engine()`.
 
 ### Incorporated into README: Updates 2022-02-18
 
