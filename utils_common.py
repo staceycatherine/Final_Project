@@ -15,6 +15,9 @@
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
 from config import pw_postgres
+from sklearn.preprocessing import OneHotEncoder
+import pandas as pd
+
 
 # *****************************************************************************
 # *****************************************************************************
@@ -32,9 +35,12 @@ def get_db_engine():
     DB_PASS = pw_postgres
     aws_database = 'shrbfk-final-project.cuitpsvagrne.us-east-2.rds.amazonaws.com:5432'
     db_string = "postgresql+psycopg2://postgres:" + DB_PASS + "@" + aws_database + "/vet_data"
-
-    db_engine = create_engine(db_string)
-    return db_engine
+    try:
+        db_engine = create_engine(db_string)
+        return db_engine
+    except Exception as e:
+        print(f"\nFailed to create database connection to {aws_database}.\n", e)
+        exit()
 
 # end get_db_engine()
 # *****************************************************************************
@@ -48,21 +54,26 @@ def get_db_engine():
 # *****************************************************************************
 def get_db_session():
     db_engine = get_db_engine()
-    db_session = Session(db_engine)
-    return db_session
+    try:
+        db_session = Session(db_engine)
+        return db_session
+    except Exception as e:
+        print(f"\nFailed to create database Session with engine {db_engine}.\n", e)
+        exit()
+    
 
 # end get_db_session()
 # *****************************************************************************
     
 # *****************************************************************************
 # *****************************************************************************
-#  get_db_session()
+#  encode_dataframe()
 #  Parameters: Dataframe to be encoded (df)
 #  Returns: Dataframe in which categorical values have been converted to
 #       encoded numerical values.
 # *****************************************************************************
 # *****************************************************************************
-def encode_dataframe(df):
+def encode_dataframe(combined_df):
     # generate categorical variable lists to encode the text
     combined_cat = combined_df.dtypes[combined_df.dtypes == 'object'].index.tolist()
 
@@ -78,7 +89,7 @@ def encode_dataframe(df):
     # Merge one-hot encoded features and drop the originals
     combined_df = combined_df.merge(encode_df, left_index=True, right_index=True)
     combined_df = combined_df.drop(columns = combined_cat)
-    combined_df = combineddf.drop(columns=["column name"])
+#    combined_df = combined_df.drop(columns=["column name"]) # Artifact from the module?
 
     return combined_df
 

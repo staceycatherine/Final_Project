@@ -6,7 +6,9 @@
 #### 4. Edits to .gitignore will be done directly at the main branch. 
 
 ##### Contributions: We choose to work and present as a group, with each of us contributing equal time and effort. We acknowledge that this will result in a group grade for this final project. 
-___________________________________________________________________________________________________________________________________________________________________________________
+---
+---
+
 ## Topic
 #### Our broad focus is on Veterans. Ron and Fritz both have deep roots in the military. Ron's grandfather, father and uncle are veterans. Ron attended military school and worked as a chaplain for a homeless shelter. Fritz is a third-generation veteran who served four years in the United States Air Force. He is interested in recruitment demographics, active duty family life, and veterans issues. Stacey's father is a veteran and she has provided in person and telephonic nursing services to many veterans over the years. Initially, we talked about veterans and access to healthcare but after looking at the data, we have changed course and will be analyzing historical data to predict what locations are likely to have a higher enlistment percentage over the next 5 years. 
 
@@ -14,7 +16,9 @@ ________________________________________________________________________________
 #### We retrieved data from Kaggle including census details on a variety of categories in rural areas by county in the US for 2010-2019. The data came from a variety of Federal sources with detailed descriptions of each category located on the USDA's website. The information is divided into four main groups; people, veterans, income and jobs, with hundreds of sub-categories for each county including population, ethnicity, unemployment and retirement data. Ron cleaned the data, sorted the columns and created dataframes which he then exported into csv files. Fritz imported the data and created tables for county classification, income, jobs, people and veterans. Ron added longitude and latitude for each state to use for visualization. 
 
 
-___________________________________________________________________________________________________________________________________________________________________________________
+---
+---
+
 ## Machine Learning Model
 #### What type of model and why? We plan to start with multiple linear regression and compare the results with ridge and lasso regression since we are looking for predictive trends not classifications. We are considering deep learning, neural networks. 
 #### Preliminary data preprocessing
@@ -27,10 +31,14 @@ ________________________________________________________________________________
 
 ![image](https://user-images.githubusercontent.com/90691846/153676445-06c1b2b2-6596-46a1-8a12-ddd2e587e96a.png)
 
-___________________________________________________________________________________________________________________________________________________________________________________
+---
+---
+
 ## Database
 
 ### Database ERD
+
+**Note:** This ERD does not include utility tables holding intermediary data (e.g., the table dump of an encoded dataframe). There may also be more tables to add when we have a clearer picture of what we will use for our presentation.
 
 ![](Images/Database_ERD.png)
 
@@ -46,7 +54,9 @@ ________________________________________________________________________________
 
 - **Security Group**: default (sg-06938851ed8d02d68)
 
-___________________________________________________________________________________________________________________________________________________________________________________
+---
+---
+
 ## Technologies Used
 #### Data Cleaning and Analysis: Pandas, Jupyter Notebook, SQL
 #### Database Storage: AWS, Postgres
