@@ -21,8 +21,8 @@
 
 ## Machine Learning Model
 #### What type of model and why? We plan to start with multiple linear regression and compare the results with ridge and lasso regression since we are looking for predictive trends not classifications. We are considering deep learning, neural networks. 
-#### Preliminary data preprocessing
-#### Preliminary feature engineering and feature selection including decision making process
+#### Preliminary data preprocessing:  We will remove rows that show data for US as opposed to county and scale the data due to the wide range of numerical data. This will be done before feature engineering and selection.
+#### Preliminary feature engineering and feature selection including decision making process: We plan to utilize Random Forest Regression to demonstrate feature importance, use a plot and/or heatmap to show correlation. At this point, we have outlines for linear, lasso and ridge regression as well as neural networks. We are in the process of refactoring code and plan to add in our data to start testing this week. 
 #### Description of how data was split into training and testing sets
 #### Explanation of model choice including limitations and benefits
 #### How are you training your model? 
@@ -61,4 +61,4 @@
 #### Data Cleaning and Analysis: Pandas, Jupyter Notebook, SQL
 #### Database Storage: AWS, Postgres
 #### Machine Learning: SciKit Learn Library, Tensorflow
-#### Dashboard: Tableau
+#### Dashboard: We plan to use Heroku, Bootstrap CSS, HTML, JS for our dashboard with interactive elements/maps included in Tableau and potentially the website as well. The interactive elements will allow the user to view the veteran population, historical and predicted, based on geographical location. 
