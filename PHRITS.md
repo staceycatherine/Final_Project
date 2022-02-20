@@ -1,4 +1,9 @@
-### Updates 2022-02-18
+### Updates 2022-02-20
+
+- [Database ERD](Images/Database_ERD.png)
+
+
+### Incorporated into README: Updates 2022-02-18
 
 - I modified Ron's `people_file_review.ipynb` to connect to the AWS database. File saved as [`fhk_people_file_review.ipynb`](`fhk_people_file_review.ipynb`).<br>
 **Implementation:** Delete Ron's file. Remove the `fhk_` from the front of my revision. Commit and push.
@@ -28,7 +33,7 @@
 
 - **Repo:** I moved the existing SQL scripts to [`./static/SQL/`](static/SQL/).
 
-### Updates: 2022-02-09
+### Incorporated into README: Updates: 2022-02-09
 
 Tables created for:
 
@@ -40,7 +45,7 @@ Tables created for:
 
 - People
 
-- Veterans
+/- Veterans
 
 Imports performed on all of the above, bringing in most of the data Ron has gathered. I had to use Windows-1252 encoding to support the &ntilde; character and others. I did not build or import tables for the derived data such as `reduced_people_data.csv`. It appears that all of the CSVs were pulled from the `RuralAtlasData23.xlsx` file, so I left that alone, too.
 
@@ -54,9 +59,7 @@ Imports performed on all of the above, bringing in most of the data Ron has gath
 - **Note:** No foreign keys yet exist. QuickDB originally generated the FKs I'd flagged, but they were all pointing to `County Classicification` which probably isn't the base table. Removed for the time being.
 
 
-## Older
-
-### Postgres hosted on Amazon Web Services.
+### Incorporated into README: Postgres hosted on Amazon Web Services.
 
 - **Server Name**: shrbfk-final-project
 
@@ -67,11 +70,3 @@ Imports performed on all of the above, bringing in most of the data Ron has gath
 - **Port**: 5432
 
 - **Security Group**: default (sg-06938851ed8d02d68)
-
-## Thoughts
-
-Data: If we can find the data we're looking for, we can store each source in a separate table. They won't necessarily join into a pretty graphical entity relationship diagram, but once it's imported, it's there for munging.
-
-Scope: Since we're talking about Veterans Affairs kinda stuff, I expect we'll mostly find information at the national level. We can narrow or filter from there. If we find rich sources in Virginia, we can pull in the national stuff filtered by state.
-
-Minimum number of commits: Dude, I save and commit when I find a typo. What a silly metric! :-)
