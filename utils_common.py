@@ -74,23 +74,27 @@ def get_db_session():
 # *****************************************************************************
 # *****************************************************************************
 def encode_dataframe(combined_df):
-    # generate categorical variable lists to encode the text
-    combined_cat = combined_df.dtypes[combined_df.dtypes == 'object'].index.tolist()
+    combined_df = combined_df.drop('FIPS', axis=1)
+    df_labels = combined_df[['State', 'County']]
+#    combined_cat = combined_df.dtypes[combined_df.dtypes == 'object'].index.tolist()
 
     # Create a OneHotEncoder instance
     enc = OneHotEncoder(sparse=False)
 
     # Fit and transform the OneHotEncoder using the categorical variable list
-    encode_df = pd.DataFrame(enc.fit_transform(combined_df[combined_cat]))
+#    encode_df = pd.DataFrame(enc.fit_transform(combined_df[combined_cat]))
+    encode_df = pd.DataFrame(enc.fit_transform(combined_df))
 
     # Add the encoded variable names to the dataframe
-    encode_df.columns = enc.get_feature_names(combined_cat)
+#    encode_df.columns = enc.get_feature_names(combined_cat)
+    encode_df.columns = enc.get_feature_names(combined_df)
     
     # Merge one-hot encoded features and drop the originals
     combined_df = combined_df.merge(encode_df, left_index=True, right_index=True)
-    combined_df = combined_df.drop(columns = combined_cat)
+#    combined_df = combined_df.drop(columns = combined_cat)
 #    combined_df = combined_df.drop(columns=["column name"]) # Artifact from the module?
 
+    combined_df = combined_df.merge(df_labels, left_index=True, right_index=True)
     return combined_df
 
 # end encode_dataframe()
