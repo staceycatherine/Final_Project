@@ -1,9 +1,6 @@
 HIDEME/*
 config.py
-<<<<<<< Updated upstream
-=======
 config.js
->>>>>>> Stashed changes
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
