@@ -71,10 +71,12 @@ def get_db_session():
 #  Parameters: Dataframe to be encoded (df)
 #  Returns: Dataframe in which categorical values have been converted to
 #       encoded numerical values.
+#
+# Note: Not debugged, may not work. The data we're using doesn't have any
+#       categorical values that contribute to the model.
 # *****************************************************************************
 # *****************************************************************************
 def encode_dataframe(combined_df):
-    # generate categorical variable lists to encode the text
     combined_cat = combined_df.dtypes[combined_df.dtypes == 'object'].index.tolist()
 
     # Create a OneHotEncoder instance
@@ -87,10 +89,11 @@ def encode_dataframe(combined_df):
     encode_df.columns = enc.get_feature_names(combined_cat)
     
     # Merge one-hot encoded features and drop the originals
+    
+    # Merge one-hot encoded features and drop the originals
     combined_df = combined_df.merge(encode_df, left_index=True, right_index=True)
     combined_df = combined_df.drop(columns = combined_cat)
-#    combined_df = combined_df.drop(columns=["column name"]) # Artifact from the module?
-
+    combined_df = combineddf.drop(columns=["column name"])
     return combined_df
 
 # end encode_dataframe()

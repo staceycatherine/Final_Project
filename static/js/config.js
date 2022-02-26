@@ -1,2 +1,3 @@
-// API key
-const API_KEY = "pk.eyJ1IjoicmJpbmdoYW1qciIsImEiOiJja3d2enZ2dHAwMG45MnZwbTZzNTNvaGphIn0.sZK8349Pdup2vL7VCEjysQ";
+console.log("MAPBOX_TOKEN (\"API_KEY\") loaded.");
+const MAPBOX_TOKEN="pk.eyJ1IjoicGhyaXRzIiwiYSI6ImNrd3czbWV1YzFnMnIydW15M2sxOGRtcjYifQ.ISk4JJAjt1P1cm6Atw-B6Q";
+const API_KEY=MAPBOX_TOKEN
