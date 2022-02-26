@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Leaflet-Basic-Map</title>
-    
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Final Project - Enlistment Trends</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Leaflet CSS (copied locally) -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/leaflet.css') }}"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin=""/>
-    
-    <!-- Our CSS -->
-    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="shortcut icon" type="text/css" href="{{ url_for('static', filename='css/favicon.ico') }}" />
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="jumbotron" style="text-align: center">
+            <p>19:20</p>
+            <h1 class="text-left">Final Project - Enlistment Trends</h1>
+            <h2 class="text-left">Stacey Hart, Ron Bingham, Fritz Knack</h2>
+        </div> <!-- class="jumbotron" -->
+        <p class="text-left">Our broad focus is on Veterans. Ron and Fritz both have deep roots in the military. Ron's grandfather, father and uncle are veterans. Ron attended military school and worked as a chaplain for a homeless shelter. Fritz is a third-generation veteran who served four years in the United States Air Force. He is interested in recruitment demographics, active duty family life, and veterans issues. Stacey's father is a veteran and she has provided in person and telephonic nursing services to many veterans over the years. Initially, we talked about veterans and access to healthcare but after looking at the data, we have changed course and will be analyzing historical data to predict what locations are likely to have a higher enlistment percentage over the next 5 years.</p>
+            <h2 class="text-left">Data</h2>
+            <p class="text-left">We retrieved data from Kaggle including census details on a variety of categories in rural areas by county in the US for 2010-2019. The data came from a variety of Federal sources with detailed descriptions of each category located on the USDA's website. The information is divided into four main groups; people, veterans, income and jobs, with hundreds of sub-categories for each county including population, ethnicity, unemployment and retirement data. Ron cleaned the data, sorted the columns and created dataframes which he then exported into csv files. Fritz imported the data and created tables for county classification, income, jobs, people and veterans. Ron added longitude and latitude for each state to use for visualization.</p>
+            <h2 class="text-left">Technologies Used</h2>
+                <table class="text-left">
+                    <tr><td><b>Data Cleaning and Analysis</b></td><td>Pandas, Jupyter Notebook, SQL</td></tr>
+                    <tr><td><b>Database Storage</b></td><td>AWS, Postgres</td></tr>
+                    <tr><td><b>Machine Learning</b></td><td>SciKit Learn Library, TensorFlow</td></tr>
+                    <tr><td><b>Dashboard</b></td><td>We plan to use Heroku, Bootstrap CSS, HTML, JS for our dashboard with interactive elements/maps included in Tableau and potentially the website as well. The interactive elements will allow the user to view the veteran population, historical and predicted, based on geographical location.</td></tr>
+                </table>
+            <br />
+            <h2 class="text-left table-bordered"><pre>README.md</pre></h2>
+            <p class="text-left">Details surrounding the <a href="https://github.com/staceycatherine/Final_Project/blob/main/README.md#postgres-hosted-on-amazon-web-services">
+                    AWS database configuration</a>,
+                    <a href="https://github.com/staceycatherine/Final_Project/blob/main/README.md#machine-learning-model">
+                    Machine Learning Model</a>,
+                    etc. are in the <a href="https://github.com/staceycatherine/Final_Project/">repo README</a> file. </p>
+            
+    </div>
     <!-- The div that holds our map -->
     <div id="mapid"></div>
     
@@ -30,4 +54,5 @@
     <script type="text/javascript" src="static/js/logic.js"></script>
 
 </body>
+
 </html>
