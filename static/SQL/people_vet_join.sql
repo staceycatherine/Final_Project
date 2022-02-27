@@ -16,7 +16,9 @@
 DROP TABLE IF EXISTS people_vet_join;
 
 SELECT
-	p.*,
+	p."State",
+    p."County",
+    p."AveragePop2015to2019",
 	v."TotalVets",
 	v."MaleVets",
 	v."FemaleVets",
