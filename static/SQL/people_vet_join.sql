@@ -18,25 +18,24 @@ DROP TABLE IF EXISTS people_vet_join;
 SELECT
 	p.*,
 	v."TotalVets",
-	v."VeteranPopulationPct",
-	v."MaleVetsPct",
-	v."FemaleVetsPct",
-	v."WhiteVetsPct",
-	v."BlackVetsPct",
-	v."HispanicVetsPct",
-	v."OtherRaceVetsPct",
-	v."LessThanHSVetsPct",
-	v."HighSchOnlyVetsPct",
-	v."SomeCollegeVetsPct",
-	v."CollegeDegreeVetsPct",
-	v."EmployeedVetsPct",
-	v."UnemployeedVetsPct"
+	v."MaleVets",
+	v."FemaleVets",
+	v."WhiteVets",
+	v."BlackVets",
+	v."HispanicVets",
+	v."OtherRaceVets",
+	v."LessThanHSVets",
+	v."HighSchOnlyVets",
+	v."SomeCollegeVets",
+	v."CollegeDegreeVets",
+	v."EmployeedVets",
+	v."UnemployeedVets"
 INTO
 	people_vet_join
 FROM
-	public.reduced_people_data as p
+	public.reduced_people as p
 INNER JOIN
-	public.sorted_veterans_data as v
+	public.vet_population as v
 ON ((p."State" = v."State")
 	and
 	(p."County" = v."County"));
