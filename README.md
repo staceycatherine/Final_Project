@@ -1,11 +1,4 @@
-# Final_Project
-## Communication Protocols
-#### 1. We agree to communicate via Slack or text and respond within 24 hours. 
-#### 2. We agree to notify each other of any scheduled or unscheduled absences. 
-#### 3. We agree to review any changes before adding to the main branch.
-#### 4. Edits to .gitignore will be done directly at the main branch. 
 
-##### Contributions: We choose to work and present as a group, with each of us contributing equal time and effort. We acknowledge that this will result in a group grade for this final project. 
 ---
 ---
 
@@ -14,14 +7,15 @@
 
 ## Data
 #### We retrieved data from Kaggle including census details on a variety of categories in rural areas by county in the US for 2010-2019. The data came from a variety of Federal sources with detailed descriptions of each category located on the USDA's website. The information is divided into four main groups; people, veterans, income and jobs, with hundreds of sub-categories for each county including population, ethnicity, unemployment and retirement data. Ron cleaned the data, sorted the columns and created dataframes which he then exported into csv files. Fritz imported the data and created tables for county classification, income, jobs, people and veterans. Ron added longitude and latitude for each state to use for visualization. 
+Ron created visualizations of the data with interactive features using [Tableau](https://public.tableau.com/app/profile/ronald.w.bingham/viz/FinalProject_16450225195590/VeteranData)
 
 
 ---
 ---
 
 ## Machine Learning Model
-#### What type of model and why? We plan to start with multiple linear regression and compare the results with ridge and lasso regression since we are looking for predictive trends not classifications. We are considering deep learning, neural networks. 
-#### Preliminary data preprocessing:  We will remove rows that show data for US as opposed to county and scale the data due to the wide range of numerical data. This will be done before feature engineering and selection.
+#### What type of model and why? We plan to start with multiple linear regression and compare the results with ridge and lasso regression if needed since we are looking for predictive trends not classifications. We are considering deep learning, neural networks. 
+#### Preliminary data preprocessing:  We will remove rows that show data for US and data for state and county where state and county are the same and scale the data due to the wide range of numerical data. This will be done before feature engineering and selection.
 #### Preliminary feature engineering and feature selection including decision making process: We plan to utilize Random Forest Regression to demonstrate feature importance, use a plot and/or heatmap to show correlation. At this point, we have outlines for linear, lasso and ridge regression as well as neural networks. We are in the process of refactoring code and plan to add in our data to start testing this week. 
 #### Description of how data was split into training and testing sets
 #### Explanation of model choice including limitations and benefits
@@ -62,3 +56,5 @@
 #### Database Storage: AWS, Postgres
 #### Machine Learning: SciKit Learn Library, Tensorflow
 #### Dashboard: We plan to use Heroku, Bootstrap CSS, HTML, JS for our dashboard with interactive elements/maps included in Tableau and potentially the website as well. The interactive elements will allow the user to view the veteran population, historical and predicted, based on geographical location. 
+
+##### Contributions: We choose to work and present as a group, with each of us contributing equal time and effort. We acknowledge that this will result in a group grade for this final project. 
