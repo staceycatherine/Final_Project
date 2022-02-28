@@ -1,11 +1,7 @@
 HIDEME/*
 config.py
 config.js
-Lasso_Regression.ipynb
-Linear Regression.ipynb
-Random_Forest_Regression.ipynb
-Ridge_Regression.ipynb
-Seaborn_Heatmap.ipynb
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
