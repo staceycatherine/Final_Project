@@ -16,10 +16,10 @@
 #### What type of model and why? We plan to start with multiple linear regression and compare the results with ridge and lasso regression if needed since we are looking for predictive trends not classifications. We are considering deep learning, neural networks. 
 #### Preliminary data preprocessing:  We will remove rows that show data for US and data for state and county where state and county are the same and scale the data due to the wide range of numerical data. This will be done before feature engineering and selection.
 #### Preliminary feature engineering and feature selection including decision making process: We plan to utilize Random Forest Regression to demonstrate feature importance, use a plot and/or heatmap to show correlation. At this point, we have outlines for linear, lasso and ridge regression as well as neural networks. We are in the process of refactoring code and plan to add in our data to start testing this week. 
-#### Description of how data was split into training and testing sets
-#### Explanation of model choice including limitations and benefits
-#### How are you training your model? 
-#### What is your model's accuracy?
+#### Description of how data was split into training and testing sets: We split the data using Total Veteran population as our target and keeping education, employment, race and gender as our features. 
+#### Explanation of model choice including limitations and benefits: We chose linear regression as our predictive model to classify trends in veteran population. 
+#### How are you training your model? After splitting into train and test, scaling and fitting the data, running it through linear, lasso and ridge regression models, we ran into a problem. 
+#### What is your model's accuracy? Our accuracy score was 0.99...we looked back at our data and realized that we do not have the details needed for train and test. We are training against a dataset that does not actually provide a way to differentiate between a veteran and a civilian. We are now in the process of finding data that will allow us to make a prediction. We have the framework in place and hope to find data to run through that framework.
 #### How does this model work?
 
 ![image](https://user-images.githubusercontent.com/90691846/153676445-06c1b2b2-6596-46a1-8a12-ddd2e587e96a.png)
