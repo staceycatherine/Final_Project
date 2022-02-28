@@ -1,4 +1,8 @@
-### Updates 2022-02-26 (WIP)
+### Updates 2022-02-27
+
+Website: https://phritspetpals.herokuapp.com/. We might relocate that before final.
+
+### Applied/Historical: Updates 2022-02-26
 
 (No `README` updates needed, I think.)
 
