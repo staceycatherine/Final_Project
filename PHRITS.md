@@ -1,4 +1,21 @@
-### Updates 2022-02-20
+### Updates 2022-02-27
+
+Website: https://phritspetpals.herokuapp.com/. We might relocate that before final.
+
+### Applied/Historical: Updates 2022-02-26
+
+(No `README` updates needed, I think.)
+
+> The web page is coming along (https://phritspetpals.herokuapp.com/). I'll move it to a better place before we're done. I still need to look at the JavaScript to see what I'm missing. I've tweaked some wording for the formal presentation, so please let me know if I've missed or mischaracterized anything. That and other feedback much appreciated!
+
+> I have consolidated what we have for code so far into Final_Project.ipynb. I'll pull the rest of y'all's stuff in before all is said and done. Once we've figured out what model and parameters gives us the curve we want, I'll prune or comment out the extraneous stuff. Again, feedback is much appreciated!
+
+> Next up: Consolidating @Ronald Bingham's data cleanup into one notebook, the content of which I'll move to the placeholder I've put in Final_Project. @Stacey Hart, so what you have to do for the model(s) you're working on. I'll patch in or fix anything like the manual people_vet_join hacking you're doing at the moment. I'll get you a good table for that before I start worrying about the JavaScript on the website.
+
+Source for States and their abbreviations: [World Population Review](https://worldpopulationreview.com/states/state-abbreviations)
+
+
+### Applied/Historical: Updates 2022-02-20
 
 - [Database ERD](Images/Database_ERD.png) **I *did* add this to the group README already for Sunday's project sumission.**
 
