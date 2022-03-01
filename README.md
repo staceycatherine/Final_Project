@@ -56,4 +56,7 @@
 #### Machine Learning: SciKit Learn Library, Tensorflow
 #### Dashboard: We plan to use Heroku, Bootstrap CSS, HTML, JS for our dashboard with interactive elements/maps included in Tableau and potentially the website as well. The interactive elements will allow the user to view the veteran population, historical and predicted, based on geographical location. 
 
+### Website
+[Final Project - Enlistment Trends](https://phritspetpals.herokuapp.com/)
+
 ##### Contributions: We choose to work and present as a group, with each of us contributing equal time and effort. We acknowledge that this will result in a group grade for this final project. 
